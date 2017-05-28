@@ -12,16 +12,7 @@ let tree;
 let MapInstance;
 let renderer, scene, camera, controls;
 let raycaster, mouse;
-
-
 let tiles = [];
-
-
-/*function createTree() {
-    tree = new Tree();
-    tree.position.y = 50;
-    scene.add(tree);
-}*/
 
 function createScene() {
     renderer = new THREE.WebGLRenderer();
@@ -73,9 +64,6 @@ function createGrid() {
         tiles.push(tile);
         scene.add(tile);
     });
-
-  /*  console.log(Grid.getNodesList().length);
-    console.log(JSON.stringify(Grid.getNodesList()));*/
 }
 
 function animate() {
